@@ -1,4 +1,4 @@
-define ssl::ca-certificate(
+define ssl::ca_certificate(
   $ensure = 'present',
   $source = '',
   $content = ''
