@@ -8,6 +8,7 @@ class ssl {
   }
 
   exec { 'update-ca-certificates':
+    command     => "/usr/sbin/update-ca-certificates",
     refreshonly => true,
   }
 }
