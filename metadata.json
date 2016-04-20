@@ -1,6 +1,6 @@
 {
   "name": "chrisboulton-ssl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Chris Boulton <chris@chrisboulton.com>",
   "summary": "Install and manage SSL certificates and certificate authorities",
   "license": "MIT",
@@ -12,4 +12,3 @@
   ],
   "data_provider": null
 }
-
