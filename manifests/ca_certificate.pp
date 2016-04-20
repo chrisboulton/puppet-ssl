@@ -1,6 +1,6 @@
 define ssl::ca_certificate(
-  $ensure = 'present',
-  $source = '',
+  $ensure  = 'present',
+  $source  = '',
   $content = ''
 ) {
   File {
@@ -10,7 +10,7 @@ define ssl::ca_certificate(
     require => Package['ca-certificates'],
   }
 
-  if ($content) {
+  if $content != '' {
     file { "/usr/local/share/ca-certificates/${name}":
       content => $content,
     }
