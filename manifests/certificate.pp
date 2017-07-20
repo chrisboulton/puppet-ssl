@@ -35,7 +35,7 @@ define ssl::certificate(
       mode   => '0640',
     }
 
-    if $all_in_one {
+    if $all_in_one != '' {
       file { "/etc/ssl/${name}/${all_in_one}":
         ensure => 'present',
         source => "${source}/${all_in_one}",
